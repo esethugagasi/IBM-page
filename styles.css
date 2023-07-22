@@ -28,7 +28,6 @@ a {
 .navdivs{
   display: flex;
   align-items: center;
- 
   height:100%;
   width: 100%;
   margin: auto;
@@ -39,6 +38,8 @@ a {
   align-items: center;
   justify-content: space-between;
   /* background-color: black; */
+  height: 60%;
+  border-right: 1px solid grey;
  
 }
 .logo{
@@ -64,6 +65,14 @@ a {
   height: 100%;
   align-items: center;
   padding: 0 20px;
+  
+}
+#leaners{
+  border-bottom: 4px solid DodgerBlue;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .navlinks li a{
   padding: 10px 30px;
@@ -73,24 +82,8 @@ a {
 
 }
 
-ul li ul.drodownmenu{
-  display: block;
-}
-ul li ul.dropdownmenu{
-  width: 100%;
-  background: grey;
-  position: absolute;
-  z-index: 999;
-  display: none;
-
-}
-
 ul li a:hover{
-  background: rgb(41, 35, 35);
-}
-ul li:hover ul.dropdownmenu{
-  display: block;
-  /* background: blue; */
+  /* background: rgb(41, 35, 35); */
 }
 .register{
   display: flex;
@@ -99,6 +92,7 @@ ul li:hover ul.dropdownmenu{
   text-align: center;
   height: 100%;
   margin-left: auto;
+  list-style-type: none;
 
 }
 .register li{
@@ -120,7 +114,12 @@ ul li:hover ul.dropdownmenu{
   height: 100%;
   
 }
-
+#login a {
+  color: #161616;
+}
+#signup a{
+  color: #fff;
+}
 .sidebar{
   background-color: #fff;
   position: fixed;
@@ -136,49 +135,71 @@ ul li:hover ul.dropdownmenu{
   height: 100%;
   /* background-color: green; */
 }
-.sidebar-links {
- 
+ul.sidebar-links {
  font-size: 25px;
  font-weight: bold;
- color: rgb(39, 8, 177);
+ color: #161616;
   
 } 
-.sidebar-links li{
-  margin: 35px 0;
+ul.sidebar-links li {
+  margin: 45px 0px;
   padding-left: 15px;
-  /* border-bottom: 1px solid grey; */
-  /* background-color: green; */
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  /* height: 100%;
+  background-color: green; */
 }
 
-.sidebar-links-section{
+ul.sidebar-links-section{
   color: #161616;
+  list-style-type: none;
+  height: 100%;
+  /* display: flex; */
+  /* background-color: green; */
 }
-.sidebar-links-section li{
+ul.sidebar-links-section li{
   padding-left: 35px;
+  font-size: 19px;
+  
 }
-.sidebar-links-section li a{
+ul.sidebar-links-section li a{
+  color: grey;
+}
+
+ul.sidebar-links-section li:hover{
+  background-color: rgba(128, 128, 128, 0.671);
+  border-left: 5px solid blue;
+  height: 100%;
+  width: 100%;
+  padding-left: 35px;
+  font-size: 15px;
+  
+}
+ul.sidebar-links-section li a:hover{
   color: #161616;
- 
+  font-weight: bold;
+  font-size: 20px;
+  /* width: 100%; */
+  /* border-left: 15px solid blue; */
 }
 
 .showcase_text{
+  display: flex;
   position: absolute;
   right: 0;
   background-color: aliceblue;
   width: 80%;
   height: 100%;
-  padding: 80px 0 0 160px;
+  padding: 160px 0 0 160px;
+  flex-direction: row;
 }
 h1{
   font-size: 50px;
   /* margin: 10px 0 0px 0; */
 }
-h2{
-  font-size: 30px;
-  margin: 10px 0;
-}
-p{
-  font-size: 20px; 
+
+.paragraphs p{
+  font-size: 25px; 
 }
 .btn {
   background-color: DodgerBlue;
@@ -190,4 +211,10 @@ p{
 }
 #description{
   margin: 70px 0;
+}
+.showcase_text_section2{
+  padding: 10px 0 0 350px;
+}
+#grad_image{
+  margin-bottom: 50px;
 }
