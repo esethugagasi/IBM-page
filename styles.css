@@ -67,13 +67,13 @@ a {
   padding: 0 20px;
   
 }
-#leaners{
+/* #leaners{
   border-bottom: 4px solid DodgerBlue;
-  /* background-color: black; */
+  background-color: black;
   display: flex;
   align-items: center;
   height: 100%;
-}
+} */
 .navlinks li a{
   padding: 10px 30px;
   color: #161616;
@@ -127,8 +127,11 @@ ul li a:hover{
   left: 0;
   height: calc(100vh - 80px);
   width: 20%;
-  border-right: 1px solid grey;
+  border-right: 0.5px solid grey;
   z-index: 99;
+}
+.sidebar p{
+  padding-left: 5%;
 }
 
 .sidebar-wrapper{
@@ -143,8 +146,8 @@ ul.sidebar-links {
 } 
 ul.sidebar-links li {
   margin: 45px 0px;
-  padding-left: 15px;
-  border-bottom: 1px solid grey;
+  /* padding-left: 15px; */
+  /* border-bottom: 1px solid grey; */
   font-size: 20px;
   /* height: 100%;
   background-color: green; */
@@ -158,8 +161,10 @@ ul.sidebar-links-section{
   /* background-color: green; */
 }
 ul.sidebar-links-section li{
+  padding: 10px 0;
   padding-left: 35px;
   font-size: 19px;
+  
   
 }
 ul.sidebar-links-section li a{
@@ -171,8 +176,7 @@ ul.sidebar-links-section li:hover{
   border-left: 5px solid blue;
   height: 100%;
   width: 100%;
-  padding-left: 35px;
-  font-size: 15px;
+  font-weight: bold;
   
 }
 ul.sidebar-links-section li a:hover{
@@ -181,6 +185,14 @@ ul.sidebar-links-section li a:hover{
   font-size: 20px;
   /* width: 100%; */
   /* border-left: 15px solid blue; */
+}
+.sidebar hr{
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  background-color: gray;
+  border: none; 
+  height: 1px;
 }
 
 .showcase_text{
